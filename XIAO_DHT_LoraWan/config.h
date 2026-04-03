@@ -25,6 +25,8 @@
 // SX1262 pin order: Module(NSS/CS, DIO1, RESET, BUSY);
 // configuration des ports du module lorawan via le port B2B du xiao
 SX1262 radio = new Module(41, 39, 42, 40);
+// si on utilise les pins, la configuration est la suivante
+// SX1262 radio = new Module(5, 2, 3, 4);
 
 // intervale d'uplink
 const uint32_t uplinkIntervalSeconds = 5UL * 60UL;  
